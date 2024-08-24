@@ -24,7 +24,7 @@ const NavbarContent = () => {
         <NavSearch />
       </div>
       <div className='flex items-center'>
-        <Link
+        {/* <Link
           className='flex mie-2'
           href={{pathname:`https://github.com/themeselection/${process.env.NEXT_PUBLIC_REPO_NAME}`}}
         >
@@ -33,7 +33,7 @@ const NavbarContent = () => {
             alt='GitHub Repo stars'
             src={`https://img.shields.io/github/stars/themeselection/${process.env.NEXT_PUBLIC_REPO_NAME}`}
           />
-        </Link>
+        </Link> */}
         <ModeDropdown />
         <IconButton className='text-textPrimary'>
           <i className='ri-notification-2-line' />

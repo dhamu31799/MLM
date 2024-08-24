@@ -22,7 +22,7 @@ const TooltipContent = () => {
       <a href='https://themeselection.com/item/materio-mui-nextjs-admin-template' target='_blank' className='flex'>
         <img
           src='https://cdn.themeselection.com/ts-assets/materio/materio-mui-nextjs-admin-template/banner/banner.png'
-          alt='Upgrade to Pro'
+          alt='Upgrade to Pross'
           className='w-full'
         />
       </a>
@@ -64,7 +64,7 @@ const UpgradeToProButton = () => {
           href='https://themeselection.com/item/materio-mui-nextjs-admin-template'
           target='_blank'
         >
-          Upgrade to Pro
+          Upgrade to Pross
           <span className={styles.buttonInner} />
         </a>
       </Tooltip>

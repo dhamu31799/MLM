@@ -44,7 +44,7 @@ const Login = ({ mode }) => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    router.push('/')
+    router.push('/dashboard')
   }
 
   return (
@@ -52,12 +52,13 @@ const Login = ({ mode }) => {
       <Card className='flex flex-col sm:is-[450px]'>
         <CardContent className='p-6 sm:!p-12'>
           <Link href={{pathname: '/' }}className='flex justify-center items-center mbe-6'>
-            <Logo />
+            {/* <Logo /> */}
+            App Name
           </Link>
           <div className='flex flex-col gap-5'>
             <div>
-              <Typography variant='h4'>{`Welcome to ${themeConfig.templateName}!👋🏻`}</Typography>
-              <Typography className='mbs-1'>Please sign-in to your account and start the adventure</Typography>
+              <Typography variant='h4'>{`Login`}</Typography>
+              {/* <Typography className='mbs-1'>Please sign-in to your account and start the adventure</Typography> */}
             </div>
             <form noValidate autoComplete='off' onSubmit={handleSubmit} className='flex flex-col gap-5'>
               <TextField autoFocus fullWidth label='Email' />
@@ -96,7 +97,7 @@ const Login = ({ mode }) => {
                   Create an account
                 </Typography>
               </div>
-              <Divider className='gap-3'>or</Divider>
+              {/* <Divider className='gap-3'>or</Divider>
               <div className='flex justify-center items-center gap-2'>
                 <IconButton size='small' className='text-facebook'>
                   <i className='ri-facebook-fill' />
@@ -110,7 +111,7 @@ const Login = ({ mode }) => {
                 <IconButton size='small' className='text-googlePlus'>
                   <i className='ri-google-fill' />
                 </IconButton>
-              </div>
+              </div> */}
             </form>
           </div>
         </CardContent>

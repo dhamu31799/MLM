@@ -42,44 +42,24 @@ const Register = ({ mode }) => {
       <Card className='flex flex-col sm:is-[450px]'>
         <CardContent className='p-6 sm:!p-12'>
           <Link href={{pathname:'/'}} className='flex justify-center items-start mbe-6'>
-            <Logo />
+            {/* <Logo /> */}
+            APP Name
           </Link>
-          <Typography variant='h4'>Adventure starts here 🚀</Typography>
+          <Typography variant='h4'>Register</Typography>
           <div className='flex flex-col gap-5'>
-            <Typography className='mbs-1'>Make your app management easy and fun!</Typography>
+            {/* <Typography className='mbs-1'>Make your app management easy and fun!</Typography> */}
             <form noValidate autoComplete='off' onSubmit={e => e.preventDefault()} className='flex flex-col gap-5'>
-              <TextField autoFocus fullWidth label='Username' />
+              <TextField autoFocus fullWidth label='First Name' />
+              <TextField autoFocus fullWidth label='Middle Name' />
+              <TextField autoFocus fullWidth label='Last Name' />
+              <TextField autoFocus fullWidth label='Contact Number' />
+              <TextField autoFocus fullWidth label='Aadhar Number' />
+              <TextField autoFocus fullWidth label='Pan Number' />
+              Tex
+             
+
               <TextField fullWidth label='Email' />
-              <TextField
-                fullWidth
-                label='Password'
-                type={isPasswordShown ? 'text' : 'password'}
-                InputProps={{
-                  endAdornment: (
-                    <InputAdornment position='end'>
-                      <IconButton
-                        size='small'
-                        edge='end'
-                        onClick={handleClickShowPassword}
-                        onMouseDown={e => e.preventDefault()}
-                      >
-                        <i className={isPasswordShown ? 'ri-eye-off-line' : 'ri-eye-line'} />
-                      </IconButton>
-                    </InputAdornment>
-                  )
-                }}
-              />
-              <FormControlLabel
-                control={<Checkbox />}
-                label={
-                  <>
-                    <span>I agree to </span>
-                    <Link className='text-primary' href={{pathname:'/'}} onClick={e => e.preventDefault()}>
-                      privacy policy & terms
-                    </Link>
-                  </>
-                }
-              />
+             
               <Button fullWidth variant='contained' type='submit'>
                 Sign Up
               </Button>
@@ -92,7 +72,7 @@ const Register = ({ mode }) => {
                   Sign in instead
                 </Typography>
               </div>
-              <Divider className='gap-3'>Or</Divider>
+              {/* <Divider className='gap-3'>Or</Divider>
               <div className='flex justify-center items-center gap-2'>
                 <IconButton size='small' className='text-facebook'>
                   <i className='ri-facebook-fill' />
@@ -106,11 +86,14 @@ const Register = ({ mode }) => {
                 <IconButton size='small' className='text-googlePlus'>
                   <i className='ri-google-fill' />
                 </IconButton>
-              </div>
+              </div> */}
             </form>
           </div>
+          
         </CardContent>
+        
       </Card>
+      
       <Illustrations maskImg={{ src: authBackground }} />
     </div>
   )

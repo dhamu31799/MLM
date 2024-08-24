@@ -22,7 +22,7 @@ const Providers = props => {
       <SettingsProvider settingsCookie={settingsCookie} mode={mode}>
         <ThemeProvider direction={direction}>
           {children}
-          <UpgradeToProButton />
+        
         </ThemeProvider>
       </SettingsProvider>
     </VerticalNavProvider>
